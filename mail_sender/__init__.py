@@ -14,8 +14,8 @@ class sender:
             self.smtpObj.starttls()
             self.smtpObj.login(senderid, password)
             print("Successfully logged in")
-        except Exception:
-            print("Error !! unable to login")
+        except Exception as e:
+            print("Error !! unable to login",e)
 
             self.smtpObj.quit()
 
