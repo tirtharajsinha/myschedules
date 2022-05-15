@@ -33,10 +33,10 @@ def timed_job_m8():
     services.keep_awake_site("https://tirtharajsinha.herokuapp.com")
 
 
-@sched.scheduled_job('interval', minutes=5)
-def timed_job_m5():
-    mails = ["sinhatirtharaj@gmail.com", "anuragunnikannan7@gmail.com"]
-    send_news_update(mails)
+# @sched.scheduled_job('interval', minutes=5)
+# def timed_job_m5():
+#     mails = ["sinhatirtharaj@gmail.com", "anuragunnikannan7@gmail.com"]
+#     send_news_update(mails)
 
 
 @sched.scheduled_job('cron', day_of_week='*', hour=14, minute=30)
