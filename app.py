@@ -13,10 +13,10 @@ def send_news_update(mails):
         sender.send_mail(mailid, "Today's news", message, "random user")
 
 
-@sched.scheduled_job('interval', minutes=3)
-def timed_job_m3():
-    mails = ["sinhatirtharaj@gmail.com"]
-    send_news_update(mails)
+# @sched.scheduled_job('interval', minutes=3)
+# def timed_job_m3():
+    # mails = ["sinhatirtharaj@gmail.com"]
+    # send_news_update(mails)
 
 
 @sched.scheduled_job('interval', minutes=8)
