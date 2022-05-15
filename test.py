@@ -5,6 +5,6 @@ def send_news_update(mails):
 
     message = services.newsService()
     for mailid in mails:
-        sender.send_mail(mailid, "Today's news", message, "random user")
+        sender.send_mail(mailid, "Today's news", "\nScheduled on everyday 6pm IST\n"+message, "random user")
 
 send_news_update(["sinhatirtharaj@gmail.com"])
