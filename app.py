@@ -14,9 +14,10 @@ def send_news_update(mails):
         feed = senderblock.send_mail(mailid, "Today's news", message, "NewsUpdate")
 
         feedback += mailid + " : " + str(feed) + "\n"
+    senderblock = sender()
     admin = "sinhatirtharaj@gmail.com"
-    sender.get_connection("tirtharaj.ubuntu@gmail.com", "ubuntu098")
-    feed = sender.send_mail(admin, "Feedback from SchedulerApp", feedback, "schedulerApp")
+    senderblock.get_connection("tirtharaj.ubuntu@gmail.com", "ubuntu098")
+    feed = senderblock.send_mail(admin, "Feedback from SchedulerApp", feedback, "schedulerApp")
 
 
 # @sched.scheduled_job('interval', minutes=3)
