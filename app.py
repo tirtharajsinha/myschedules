@@ -5,12 +5,11 @@ sched = BlockingScheduler()
 
 def send_news_update(mails):
     from mail_sender import sender, services
-    sender = sender()
-    sender.get_connection("tirtharaj.ubuntu@gmail.com", "ubuntu098")
-
     message = services.newsService()
     for mailid in mails:
-        sender.send_mail(mailid, "Today's news", message, "random user")
+        sender = sender()
+        sender.get_connection("tirtharaj.ubuntu@gmail.com", "ubuntu098")
+        sender.send_mail(mailid, "Today's news", message, "NewsUpdate")
 
 
 # @sched.scheduled_job('interval', minutes=3)
