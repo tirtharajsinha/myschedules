@@ -27,7 +27,7 @@ class sender:
         message=message.encode('utf-8').strip()
 
         try:
-            self.smtpObj.sendmail([sendername], reciver, message)
+            self.smtpObj.sendmail(sendername, reciver, message)
             print("sucessfully mail sent")
             self.smtpObj.quit()
             return True
