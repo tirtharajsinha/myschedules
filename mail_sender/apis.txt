@@ -1,0 +1,6 @@
+0geolocapi:AIzaSyA4CTsJl0fgDCOJwd5cHF4oQoG0r2bB76E
+1gmailid:tsinha098@gmail.com
+2gmailpass:a11s22d33###
+3weatherapi:8e44efb0ae84f237a5d93f5f4d629433
+4wolframalpha:E2Y4HK-4UHQKEXQ77
+5.newsapi:2fbfbc294434437e8818f71739b32d00
