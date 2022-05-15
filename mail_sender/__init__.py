@@ -30,7 +30,9 @@ class sender:
             self.smtpObj.sendmail([sendername], reciver, message)
             print("sucessfully mail sent")
             self.smtpObj.quit()
+            return True
         except Exception as e:
             print(e)
             print("Error !!  unable to send mail")
             self.smtpObj.quit()
+            return False
