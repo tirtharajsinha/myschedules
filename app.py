@@ -27,7 +27,7 @@ def timed_job_m8():
 
 @sched.scheduled_job('cron', day_of_week='mon-fri', hour=17)
 def scheduled_job():
-    mails = ["sinhatirtharaj@gmail.com"]
+    mails = ["sinhatirtharaj@gmail.com", "anuragunnikannan7@gmail.com"]
     send_news_update(mails)
 
 
