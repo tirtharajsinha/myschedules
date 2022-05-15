@@ -6,7 +6,7 @@ sched = BlockingScheduler()
 def send_news_update(mails):
     from mail_sender import sender, services
     message = services.newsService()
-    feedback = ""
+    feedback = "Feedback from your app\n"
     for mailid in mails:
         print("calling  mail sender")
         senderblock = sender()
@@ -17,6 +17,7 @@ def send_news_update(mails):
     senderblock = sender()
     admin = "sinhatirtharaj@gmail.com"
     senderblock.get_connection("tirtharaj.ubuntu@gmail.com", "ubuntu098")
+    print(feedback,"................")
     feed = senderblock.send_mail(admin, "Feedback from SchedulerApp", feedback, "schedulerApp")
 
 
