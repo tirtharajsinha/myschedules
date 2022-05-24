@@ -27,7 +27,7 @@ def send_news_update(mails):
 # send_news_update(mails)
 
 
-@sched.scheduled_job('interval', minutes=8)
+@sched.scheduled_job('interval', minutes=30)
 def timed_job_m8():
     from mail_sender import services
     services.keep_awake_site("https://tirtharajsinha.herokuapp.com")
